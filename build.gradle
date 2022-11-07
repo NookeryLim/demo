@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '2.7.5'
+    id 'org.springframework.boot' version '2.6.13' //적용유무 확인 필요
     id 'io.spring.dependency-management' version '1.0.15.RELEASE'
     id 'java'
 }
@@ -13,13 +13,14 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa' //스프링부트 버전에 맞춰 자동으로 JPA관련 라이브러리 관리
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.13' //최신버젼 아니라고 밑줄생김
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa' //스프링부트 버전에 맞춰 자동으로 JPA 관련 라이브러리 관리
     implementation 'com.h2database:h2'//인메모리 관계형 DB, 메모리에서 실행되기에 재시작마다 초기화-테스트용도로 많이 사용
+
+    implementation 'org.springframework.boot:spring-boot-starter-mustache' //템플릿엔진 mustache
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'junit:junit'
-
-//    implementation 'org.projectlombok:lombok'
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
