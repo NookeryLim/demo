@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let main = {
     init : function () {
         let _this = this;
@@ -11,20 +10,6 @@ let main = {
             title: $('#title').val(),
             author: $('#author').val(),
             content: $('#content').val()
-=======
-var main = {
-    init: function () {
-        var _this = this;
-        $('#btn-save').on('click', function () {
-            _this.save();
-        })
-    },
-    save: function () {
-        var data = {
-            title: $('title').val(),
-            author: $('author').val(),
-            content: $('content').val()
->>>>>>> origin/demo_117
         };
 
         $.ajax({
@@ -41,10 +26,6 @@ var main = {
         });
     }
 
-<<<<<<< HEAD
 };
-=======
-}
->>>>>>> origin/demo_117
 
 main.init();
