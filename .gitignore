@@ -36,5 +36,5 @@ out/
 ### VS Code ###
 .vscode/
 
-### 메뉴얼 추가 ###
+### add ###
 application-oauth.properties
