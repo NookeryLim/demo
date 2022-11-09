@@ -1,15 +1,15 @@
-var main = {
-    init: function () {
-        var _this = this;
+let main = {
+    init : function () {
+        let _this = this;
         $('#btn-save').on('click', function () {
             _this.save();
-        })
+        });
     },
-    save: function () {
-        var data = {
-            title: $('title').val(),
-            author: $('author').val(),
-            content: $('content').val()
+    save : function () {
+        let data = {
+            title: $('#title').val(),
+            author: $('#author').val(),
+            content: $('#content').val()
         };
 
         $.ajax({
@@ -26,6 +26,6 @@ var main = {
         });
     }
 
-}
+};
 
 main.init();
