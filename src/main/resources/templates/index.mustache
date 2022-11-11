@@ -11,10 +11,18 @@
 <!-- >뜻: 현재 머스타치 파일 기준으로 다른 파일을 가져옴-->
 
     <h1>스프링 부트로 시작하는 웹 서비스 Ver.2</h1>
+    <!--로그인 기능 영역-->
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-6">
                 <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
+                {{#userName}} <!--userName이 있다면 표시-->
+                    Logged in as: <span id="user">{{userName}}</span>
+                <a href="/logout" class="btn btn-info active" role="button">Logout</a>  <!--logout은 스프링 시큐리티에서 기본적으로 제공하는 URL-->
+                {{/userName}}
+                {{^userName}} <!--머스테치에서 해당 값이 존재하지 않는 경우 ^를 사용하면 노출-->
+                    <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a> <!--스프링 시큐리티에서 제공하는 로그인 URL-->
+                {{/userName}}
             </div>
         </div>
         <br>
