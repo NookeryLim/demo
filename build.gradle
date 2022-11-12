@@ -20,6 +20,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-mustache' //템플릿엔진 mustache
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client' //소셜로그인 구현 의존성. 시큐리티 기본으로 관리해줌
 
+    implementation 'org.springframework.session:spring-session-jdbc' //데이터베이스를 세션 저장소로 사용하기 위해 추가
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'junit:junit'
 
