@@ -22,6 +22,7 @@
                 {{/userName}}
                 {{^userName}} <!--머스테치에서 해당 값이 존재하지 않는 경우 ^를 사용하면 노출-->
                     <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a> <!--스프링 시큐리티에서 제공하는 로그인 URL-->
+                    <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a> <!--네이버 로그인 URL은 등록한 redirect-uri값에 맞춰 자동으로 등록-->
                 {{/userName}}
             </div>
         </div>
