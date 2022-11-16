@@ -57,3 +57,8 @@ https://iamfreeman.tistory.com/entry/vi-vim-편집기-명령어-정리-단축키
 261p 호스트네임 변경 적용이 안됨
 해결 : https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/set-hostname.html
 
+RDS는 MariaDB 선택
+MariaDB 10.6.10
+
+인텔리제이 플러그인으로 Database Navigator 대신 내장기능(보기->데이터베이스) 사용해보기
+Database browser는 성공, 내장기능은 실패한 상황
