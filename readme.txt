@@ -61,4 +61,4 @@ RDS는 MariaDB 선택
 MariaDB 10.6.10
 
 인텔리제이 플러그인으로 Database Navigator 대신 내장기능(보기->데이터베이스) 사용해보기
-Database browser는 성공, 내장기능은 실패한 상황
+Database browser는 성공, 내장기능은 실패한 상황임
