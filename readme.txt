@@ -57,3 +57,4 @@ https://iamfreeman.tistory.com/entry/vi-vim-편집기-명령어-정리-단축키
 261p 호스트네임 변경 적용이 안됨
 해결 : https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/set-hostname.html
 
+RDS는 MariaDB 선택
